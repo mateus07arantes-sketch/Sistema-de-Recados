@@ -1,0 +1,446 @@
+/* Geral */
+
+body {
+  background: #f0f0f0;
+}
+
+h1 {
+  font-family: 'Gloria Hallelujah', cursive;
+}
+
+.text-danger-cards {
+  background-color: #f8d7da; 
+  color: #EF476F; /* Cor do texto em um tom mais escuro de vermelho */
+  border: 1px solid #f5c6cb; /* Borda com um tom mais claro de vermelho */
+  padding: 15px; /* Espaçamento interno para tornar o texto mais legível */
+  border-radius: 5px; /* Bordas arredondadas */
+  font-size: 16px; /* Tamanho da fonte */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombras sutis para dar destaque */
+  margin: 10px 0; /* Espaçamento em cima e embaixo do aviso */
+}
+
+.text-danger strong {
+  font-weight: bold; /* Destacar palavras importantes */
+}
+
+.text-danger a {
+  color: #EF476F; /* Links na mesma cor do texto */
+  text-decoration: underline;
+}
+
+.alert-info {
+  background-color: #d1ecf1; /* Cor de fundo suave em azul claro */
+  color: #0c5460; /* Cor do texto em um tom mais escuro de azul */
+  border: 1px solid #bee5eb; /* Borda com um tom mais claro de azul */
+  padding: 15px; /* Espaçamento interno */
+  border-radius: 5px; /* Bordas arredondadas */
+  font-size: 16px; /* Tamanho da fonte */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombras sutis para dar destaque */
+  margin: 10px 0; /* Espaçamento em cima e embaixo do alerta */
+  position: relative; /* Para posicionar um ícone, se necessário */
+}
+
+.alert-info strong {
+  font-weight: bold; /* Destacar palavras importantes */
+}
+
+.alert-info a {
+  color: #0c5460; /* Cor do link no alerta */
+  text-decoration: underline;
+}
+
+.alert-info::before {
+  font-family: 'Font Awesome 5 Free'; /* Dependendo da biblioteca de ícones que você está utilizando */
+  font-weight: 900;
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px; /* Tamanho do ícone */
+  color: #0c5460;
+}
+
+.btn-primary{
+  background-color: #FFD166;
+  border: #FFD166 solid 1px;
+  color: #181818;
+}
+
+.btn-primary:hover{
+  background-color: #4c795c;
+  color: #fff;
+  border: #4c795c solid 1px;
+}
+
+.btn-outline-primary{
+  color: #4c795c;
+  border: #4c795c solid 1px;
+}
+
+.btn-outline-primary:hover{
+  background-color: #4c795c;
+  color: #fff;
+  border: #4c795c solid 1px;
+}
+ 
+/* Navbar */
+
+.navbar-nav .nav-link {
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+.navbar-brand {
+  font-size: 1.4rem;;
+  text-transform: uppercase;
+}
+.navbar .dropdown-menu {
+  background-color: #4c795c;
+}
+
+/* Página de Boas-vindas */
+
+.welcome-image {
+  max-width: 600px;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .welcome-image {
+      max-width: 90%;
+      margin-bottom: 2rem;
+  }
+}
+
+.welcome-container h1{
+  font-family: 'Gloria Hallelujah', cursive;
+}
+
+.welcome-container h2{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #4c795c;
+}
+
+.btn-sistem{
+  background-color: #FFD166;
+  color: #181818;
+}
+
+.btn-sistem:hover{
+  background-color: #4c795c;
+  color: #fff;
+}
+
+/* Corpo Dashboard */
+
+.imagem-menor {
+  width: 400px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.btn-visualizar {
+  background-color:  #FFD166 !important;
+  color: #181818;
+}
+
+.btn-visualizar:hover {
+  color: #fff;
+  transform: scale(1.05);     /* cresce um pouco */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #4c795c !important;
+}
+
+.btn-add{
+  background-color: #FFD166 !important;
+  color: #181818;
+}
+
+.btn-add:hover {
+  color: #fff;
+  transform: scale(1.05);     /* cresce um pouco */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #4c795c !important;
+}
+
+.titulo-quadro {
+  font-family: 'Gloria Hallelujah', cursive;
+  background-color: #4c795c;
+  color: #ffff;
+  padding: 30px;
+  border: 5px dashed #FFD166; /* como giz em volta */
+  border-radius: 10px;
+  text-align: center;
+  font-size: 3rem;
+  width: 80%;
+  margin: 40px auto;
+  text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.05);
+}
+
+.mini-recado{
+
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.recado{
+  font-family: 'Gloria Hallelujah', cursive;
+}
+
+/* Card de cadastro e edição dos recados*/
+
+.custom-card{
+  background-color: #4c795c;
+  color: #fff;
+  border: #cca97c solid 10px;
+}
+
+.custom-card h3{
+  font-family: 'Gloria Hallelujah', cursive;
+}
+
+.custom-card button{
+  background-color: #fff;
+}
+
+.custom-card a{
+  background-color: #fff;
+}
+
+.btn-voltarcad{
+  background-color: #FFD166 !important;
+  color: #181818;
+}
+
+.btn-salvarcad{
+  background-color: #FFD166 !important;
+  color: #181818;
+}
+
+/* Cards de Cadastro */
+
+.card-register {
+  max-width: 400px;
+  height: auto;
+  margin: auto;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: #4c795c; /* Fundo estilo quadro negro */
+  color: #ffffff; /* Texto branco */
+}
+
+.card-register a {
+  transition: all 0.3s ease-in-out;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+  color: #fff;
+}
+
+.card-register .form-label,
+.card-register .form-check-label,
+.card-register input,
+.card-register select {
+  color: #fff;
+}
+
+.card-register .form-control,
+.card-register .form-select {
+  background-color: #2d4836;
+  border: 1px solid #2d4836;
+  color: #fff;
+}
+
+.btn-primary.btn-cadastrar{
+  background-color: #FFD166;
+  color: #181818;
+}
+
+.btn-primary.btn-cadastrar:hover{
+  color: #fff;
+}
+
+/* Rodapé */
+footer {
+  background-color: #FFD166;
+  color: #073B4C;
+  margin-top: 3rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+footer a {
+  color: #073B4C;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer blockquote {
+  font-style: italic;
+  color: #073B4C;
+}
+
+footer hr {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Sobre nós */
+
+.aboutus-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.aboutus-title {
+  text-align: center;
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 30px;
+  font-family: 'Gloria Hallelujah', cursive;
+}
+
+.aboutus-intro {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+}
+
+.aboutus-image {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.aboutus-image:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.aboutus-text {
+  flex: 1;
+  font-size: 16px;
+  color: #555;
+}
+
+.aboutus-text p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.aboutus-button {
+  display: inline-block;
+  background-color: #FFD166;
+  color: #181818;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.aboutus-button:hover {
+  transform: scale(1.05);     /* cresce um pouco */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  background-color: #4c795c;
+}
+
+@media (max-width: 768px) {
+  .aboutus-intro {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .aboutus-text {
+    width: 100%;
+  }
+
+  .aboutus-image {
+    max-width: 100%;
+  }
+}
+
+.aboutus-history {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.aboutus-history-title {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #333;
+  font-family: 'Gloria Hallelujah', cursive;
+}
+
+.aboutus-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.aboutus-card {
+  background-color: #fff;
+  width: 250px;
+  border-radius: 16px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.aboutus-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.aboutus-card-image {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.aboutus-card-title {
+  font-size: 20px;
+  color: #444;
+  margin: 15px 0 10px;
+  text-align: center;
+  font-family: 'Gloria Hallelujah', cursive;
+}
+
+.aboutus-card-text {
+  padding: 0 15px 20px;
+  font-size: 15px;
+  text-align: justify;
+}
+
+/* Tabela de estudantes */
+
+.table {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.table th, .table td {
+  padding: 16px 12px;
+  vertical-align: middle;
+}
+
+.table thead th {
+  background-color: #FFD166; /* azul bootstrap */
+  color: #181818;
+  font-weight: bold;
+}
